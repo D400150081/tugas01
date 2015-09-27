@@ -1,0 +1,38 @@
+D > 0 mempunyai dua akar real berlainan
+D = 0 mempunyai dua akar real sama
+D < 0 mempunyai akar real
+# include <stdio.h>
+#include <math.h>
+main()
+{
+          int a,b,c;
+          float d,x1,x2;
+          printf(“Masukkan angka a :\n”);
+          scanf(“%d”,&a);
+          printf(“Masukkan angka b:\n”);
+          scanf(“%d”,&b);
+          printf(“Masukkan angka c:\n”);
+          scanf(“%d”,&c);
+          d = b*b – 4*a*c;   // untuk menentukan nilai diskriminan
+          if (d>0)
+          {
+                  x1 = ((-b) + sqrt(d))/2*a;
+                  x2 = ((-b) – sqrt(d))/2*a;
+                  printf(“Maka hasil akar-akar persamaanya adalah :\n”);
+                  printf(“Hasil akar x1 = %f \n”,x1);
+                  printf(“Hasil akar x2″ = %f \n”,x2);
+           }
+           else if (d = 0)
+           {
+                   x1 = ((-b) + sqrt(d))/2*a;
+                  x2 = -x1;
+                 printf(“Maka hasil akar-akar persamaanya adalah :\n”);
+                 printf(“Hasil akar x1 = %f \n”,x1);
+                 printf(“Hasil akar x2″ = %f \n”,x2);
+            }
+           else
+           {
+                printf(“Maka hasil akar-akar persamaanya berupa angka imaginer\n”);
+            }
+}
+
